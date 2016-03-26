@@ -1,0 +1,40 @@
+{
+  "name": "potfur/journal",
+  "keywords": ["domain-driven design", "ddd", "cqrs", "event sourcing", "event store"],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Michal Wachowski",
+      "email": "wachowski.michal@gmail.com"
+    }
+  ],
+  "config": {
+    "bin-dir": "bin"
+  },
+  "require": {
+    "php": ">=5.6"
+  },
+  "autoload": {
+    "psr-0": {
+      "Journal\\": "./src/"
+    }
+  },
+  "require-dev": {
+    "phpspec/phpspec": "^2.4",
+    "phpunit/phpunit": "^5.2",
+    "league/tactician": "^1.0",
+    "symfony/event-dispatcher": "^3.0"
+  },
+  "autoload-dev": {
+    "psr-0": {
+      "ExampleBank\\": "./example/"
+    }
+  },
+  "archive": {
+    "exclude": [
+      "/example",
+      "/spec",
+      "/tests"
+    ]
+  }
+}
